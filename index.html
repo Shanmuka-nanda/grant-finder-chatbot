@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Finder - AI-Powered Grant Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎯 Grant Finder</h1>
+            <p class="subtitle">AI-Powered Grant Search Assistant</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="messages-container" id="messagesContainer">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your Grant Finder assistant. I can help you find grants that match your needs. Click on the suggestions below or type your query to get started!</p>
+                        <div class="suggestions-container" id="suggestionsContainer">
+                            <p class="suggestions-label">💡 Try asking about:</p>
+                            <div class="suggestions-list" id="suggestionsList">
+                                <button class="suggestion-chip" data-query="education grants">Education Grants</button>
+                                <button class="suggestion-chip" data-query="small business funding">Small Business Funding</button>
+                                <button class="suggestion-chip" data-query="nonprofit grants">Nonprofit Grants</button>
+                                <button class="suggestion-chip" data-query="research grants">Research Grants</button>
+                                <button class="suggestion-chip" data-query="healthcare innovation">Healthcare Innovation</button>
+                                <button class="suggestion-chip" data-query="environmental conservation">Environmental Conservation</button>
+                                <button class="suggestion-chip" data-query="arts and culture">Arts and Culture</button>
+                                <button class="suggestion-chip" data-query="community development">Community Development</button>
+                                <button class="suggestion-chip" data-query="technology grants">Technology Grants</button>
+                                <button class="suggestion-chip" data-query="youth programs">Youth Programs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Ask about grants... (e.g., 'education grants for nonprofits')"
+                    autocomplete="off"
+                />
+                <button id="sendButton" class="send-button">
+                    <span>Send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
